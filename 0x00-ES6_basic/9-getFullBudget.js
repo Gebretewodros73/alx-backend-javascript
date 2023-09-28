@@ -1,5 +1,5 @@
 // Import the function getBudgetObject from the file './7-getBudgetObject.js'
-import getBudgetObject from './7-getBudgetObject.js';
+import getBudgetObject from './7-getBudgetObject';
 
 // Define a function named getFullBudgetObject with three parameters: income, gdp, and capita
 export default function getFullBudgetObject(income, gdp, capita) {
