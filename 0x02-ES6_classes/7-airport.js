@@ -1,7 +1,7 @@
-class Airport {
+export default class Airport {
   constructor(name, code) {
-    this._name = name;
-    this._code = code;
+    this.name = name;
+    this.code = code;
   }
 
   get name() {
@@ -20,9 +20,7 @@ class Airport {
     this._code = value;
   }
 
-  toString() {
-    return `[${this._code}] { _name: '${this._name}', _code: '${this._code}' }`;
+  get [Symbol.toStringTag]() {
+    return this._code;
   }
 }
-
-export default Airport;
