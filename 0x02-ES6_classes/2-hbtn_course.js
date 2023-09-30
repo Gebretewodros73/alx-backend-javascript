@@ -1,8 +1,12 @@
 class HolbertonCourse {
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    if (typeof name === 'string' && typeof length === 'number' && Array.isArray(students) && students.every((s) => typeof s === 'string')) {
+      this._name = name;
+      this._length = length;
+      this._students = students;
+    } else {
+      throw new TypeError('Invalid input types for constructor');
+    }
   }
 
   get name() {
@@ -34,7 +38,7 @@ class HolbertonCourse {
   }
 
   set students(value) {
-    if (Array.isArray(value)) {
+    if (Array.isArray(value) && value.every((s) => typeof s === 'string')) {
       this._students = value;
     } else {
       throw new TypeError('Students must be an array of strings');
