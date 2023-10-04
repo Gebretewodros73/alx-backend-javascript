@@ -50,6 +50,9 @@ This directory contains JavaScript tasks focused on ES6 data manipulation. Each 
     - Create a function `updateUniqueItems` that updates quantities for unique items in a map.
     - Example Usage: `console.log(updateUniqueItems(map));`
 
+12. [Weak link data structure](./100-weak.js)
+    - Export a WeakMap instance and a function queryAPI that tracks the number of times it's called for each endpoint.
+
 ## How to Use
 
 To run each task, you can use the following command:
