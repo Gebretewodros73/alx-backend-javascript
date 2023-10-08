@@ -4,8 +4,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 0: Creating an interface for a student
 
-- Directory: `task_0`
-- Files: `main.ts`, `package.json`, `.eslintrc.js`, `tsconfig.json`, `webpack.config.js`
+- Directory: [task_0](./task_0)
+- Files: [main.ts](./task_0/js/main.ts), [package.json](./task_0/package.json), [.eslintrc.js](./task_0/.eslintrc.js), [tsconfig.json](./task_0/tsconfig.json), [webpack.config.js](./task_0/webpack.config.js)
 
 ### Solution
 
@@ -15,8 +15,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 1: Let's build a Teacher interface
 
-- Directory: `task_1`
-- Files: `main.ts`, `package.json`, `tsconfig.json`, `webpack.config.js`
+- Directory: [task_1](./task_1)
+- Files: [main.ts](./task_1/js/main.ts), [package.json](./taks_1/package.json), [tsconfig.json](./task_1/tsconfig.json), [webpack.config.js](./task_1/webpack.config.js)
 
 ### Solution
 
@@ -29,8 +29,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 2: Extending the Teacher class
 
-- Directory: `task_1`
-- File: `main.ts`
+- Directory: [task_1](./task_1)
+- File: [main.ts](./task_1/js/main.ts)
 
 ### Solution
 
@@ -38,8 +38,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 3: Printing teachers
 
-- Directory: `task_1`
-- File: `main.ts`
+- Directory: [task_1](./task_1)
+- File: [main.ts](./task_1/js/main.ts)
 
 ### Solution
 
@@ -48,8 +48,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 4: Writing a class
 
-- Directory: `task_1`
-- File: `main.ts`
+- Directory: [task_1](./task_1)
+- File: [main.ts](./task_1/js/main.ts)
 
 ### Solution
 
@@ -59,8 +59,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 5: Advanced types Part 1
 
-- Directory: `task_2`
-- Files: `main.ts`, `webpack.config.js`, `tsconfig.json`, `package.json`
+- Directory: [task_2](./task_2)
+- Files: [main.ts](./task_2/js/main.ts), [webpack.config.js](./task_2/webpack.config.js), [tsconfig.json](./task_2/tsconfig.json), [package.json](task_2/package.json)
 
 ### Solution
 
@@ -70,8 +70,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 6: Creating functions specific to employees
 
-- Directory: `task_2`
-- File: `main.ts`
+- Directory: [task_2](./task_2)
+- File: [main.ts](./task_2/js/main.ts)
 
 ### Solution
 
@@ -80,8 +80,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 7: String literal types
 
-- Directory: `task_2`
-- File: `main.ts`
+- Directory: [task_2](./task_2)
+- File: [main.ts](./task_2/js/main.ts)
 
 ### Solution
 
@@ -90,8 +90,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 8: Ambient Namespaces
 
-- Directory: `task_3`
-- Files: `main.ts`, `interface.ts`, `crud.d.ts`
+- Directory: [task_3](./task_3)
+- Files: [main.ts](./task_3/js/main.ts), [interface.ts](./task_3/js/interface.js), [crud.d.ts](./task_3/js/crud.d.ts)
 
 ### Solution
 
@@ -100,8 +100,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 9: Namespace & Declaration merging
 
-- Directory: `task_4`
-- Files: `Teacher.ts`, `Subject.ts`, `Cpp.ts`, `Java.ts`, `React.ts`
+- Directory: [task_4](./task_4)
+- Files: [package.json](./task_4/package.json), [tsconfig.json](./task_4/tsconfig.json), [Teacher.ts](./task_4/js/subjects/Teacher.ts), [Subject.ts](./task_4/js/subjects/Subject.ts), [Cpp.ts](./task_4/js/subjects/Cpp.ts), [Java.ts](./task_4/js/subjects/Java.ts), [React.ts](./task_4/js/subjects/Teacher.ts)
 
 ### Solution
 
@@ -109,8 +109,8 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 10: Update task_4/js/main.ts
 
-- Directory: `task_4`
-- File: `main.ts`
+- Directory: [task_4](./task_4)
+- File: [main.ts](./task_4/js/main.ts)
 
 ### Solution
 
@@ -120,10 +120,20 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 ## Task 11: Brand convention & Nominal typing
 
-- Directory: `task_5`
-- Files: `main.ts`, `package.json`, `tsconfig.json`, `webpack.config.js`
+- Directory: [task_5](./task_5)
+- Files: [main.ts](./task_5/js/main.ts), [package.json](./task_5/package.json), [tsconfig.json](./task_5/tsconfig.json), [webpack.config.js](./task_5/webpack.config.js)
 
 ### Solution
 
 - Interfaces `MajorCredits` and `MinorCredits` with a `credits` property, each with a unique brand property, were created.
 - Functions `sumMajorCredits` and `sumMinorCredits` were implemented to operate on the respective credit types.
+
+
+## Usage
+
+- clone the repository `https://github.com/Gebretewodros73/alx-backend-javascript.git`
+- go to the directory `alx-backend-javascript/0x04-TypeScript/task_#`
+- and Run
+```bash
+sudo npm run start-dev
+```
