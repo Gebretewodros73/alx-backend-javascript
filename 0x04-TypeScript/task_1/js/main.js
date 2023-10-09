@@ -1,16 +1,17 @@
-var teacher1 = {
-    firstName: "John",
-    lastName: "Doe",
+var director1 = {
+    firstName: 'John',
+    lastName: 'Doe',
     fullTimeEmployee: true,
     yearsOfExperience: 5,
-    location: "New York"
+    location: 'New York',
+    numberOfReports: 10,
 };
-var teacher2 = {
-    firstName: "Jane",
-    lastName: "Smith",
+var director2 = {
+    firstName: 'Jane',
+    lastName: 'Smith',
     fullTimeEmployee: false,
-    location: "Los Angeles",
-    contract: true // Additional attribute
+    location: 'Los Angeles',
+    numberOfReports: 7,
 };
-console.log(teacher1);
-console.log(teacher2);
+console.log(director1);
+console.log(director2);
