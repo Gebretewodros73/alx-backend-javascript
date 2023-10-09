@@ -40,3 +40,21 @@ var teacherName1 = printTeacher(teacher1.firstName, teacher1.lastName);
 var teacherName2 = printTeacher(teacher2.firstName, teacher2.lastName);
 console.log(teacherName1); // Output: J. Doe
 console.log(teacherName2); // Output: J. Smith
+// Create the StudentClass
+var StudentClass = /** @class */ (function () {
+    function class_1(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    class_1.prototype.workOnHomework = function () {
+        return "Currently working";
+    };
+    class_1.prototype.displayName = function () {
+        return this.firstName;
+    };
+    return class_1;
+}());
+// Example usage
+var student = new StudentClass("John", "Doe");
+console.log(student.workOnHomework()); // Output: Currently working
+console.log(student.displayName()); // Output: John

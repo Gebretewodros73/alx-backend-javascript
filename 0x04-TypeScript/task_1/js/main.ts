@@ -63,3 +63,39 @@ const teacherName2 = printTeacher(teacher2.firstName, teacher2.lastName);
 
 console.log(teacherName1); // Output: J. Doe
 console.log(teacherName2); // Output: J. Smith
+
+// Define an interface for the class constructor
+interface StudentClassConstructor {
+  new (firstName: string, lastName: string): StudentClass;
+}
+
+// Define an interface for the StudentClass
+interface StudentClass {
+  workOnHomework: () => string;
+  displayName: () => string;
+}
+
+// Create the StudentClass
+const StudentClass: StudentClassConstructor = class {
+  private firstName: string;
+  private lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+};
+
+// Example usage
+const student = new StudentClass("John", "Doe");
+console.log(student.workOnHomework()); // Output: Currently working
+console.log(student.displayName()); // Output: John
+
