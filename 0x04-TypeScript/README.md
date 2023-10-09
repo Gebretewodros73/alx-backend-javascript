@@ -7,6 +7,11 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 - Directory: [task_0](./task_0)
 - Files: [main.ts](./task_0/js/main.ts), [package.json](./task_0/package.json), [.eslintrc.js](./task_0/.eslintrc.js), [tsconfig.json](./task_0/tsconfig.json), [webpack.config.js](./task_0/webpack.config.js)
 
+```bash
+cd task_0
+sudo npm run start-dev
+```
+
 ### Solution
 
 - An interface named `Student` was created with elements: `firstName(string)`, `lastName(string)`, `age(number)`, and `location(string)`.
@@ -17,6 +22,12 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 - Directory: [task_1](./task_1)
 - Files: [main.ts](./task_1/js/main.ts), [package.json](./taks_1/package.json), [tsconfig.json](./task_1/tsconfig.json), [webpack.config.js](./task_1/webpack.config.js)
+
+```bash
+cd task_1
+sudo tsc js/main.ts
+sudo node js/main.js
+```
 
 ### Solution
 
@@ -32,6 +43,12 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 - Directory: [task_1](./task_1)
 - File: [main.ts](./task_1/js/main.ts)
 
+```bash
+cd task_1
+sudo tsc js/main.ts
+sudo node js/main.js
+```
+
 ### Solution
 
 - An interface named `Directors` was created, extending `Teacher`, requiring an attribute named `numberOfReports(number)`.
@@ -40,6 +57,12 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 - Directory: [task_1](./task_1)
 - File: [main.ts](./task_1/js/main.ts)
+
+```bash
+cd task_1
+sudo tsc js/main.ts
+sudo node js/main.js
+```
 
 ### Solution
 
@@ -50,6 +73,12 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 - Directory: [task_1](./task_1)
 - File: [main.ts](./task_1/js/main.ts)
+
+```bash
+cd task_1
+sudo tsc js/main.ts
+sudo node js/main.js
+```
 
 ### Solution
 
@@ -133,7 +162,4 @@ This repository contains solutions for the ALX Backend JavaScript tasks.
 
 - clone the repository `https://github.com/Gebretewodros73/alx-backend-javascript.git`
 - go to the directory `alx-backend-javascript/0x04-TypeScript/task_#`
-- and Run
-```bash
-sudo npm run start-dev
-```
+- and run as is described in each task
