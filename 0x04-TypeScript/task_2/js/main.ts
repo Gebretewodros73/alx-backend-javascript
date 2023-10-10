@@ -1,62 +1,51 @@
-// Define the DirectorInterface
-interface DirectorInterface {
-  workFromHome(): string;
-  getCoffeeBreak(): string;
-  workDirectorTasks(): string;
+interface Director {
+  firstName: string;
+  lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+  numberOfReports: number;
 }
 
-// Define the TeacherInterface
-interface TeacherInterface {
-  workFromHome(): string;
-  getCoffeeBreak(): string;
-  workTeacherTasks(): string;
+interface Teacher {
+  firstName: string;
+  lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
 }
 
-// Create the Director class
-class Director implements DirectorInterface {
-  workFromHome(): string {
-    return "Working from home";
-  }
-
-  getCoffeeBreak(): string {
-    return "Getting a coffee break";
-  }
-
-  workDirectorTasks(): string {
-    return "Getting to director tasks";
-  }
+function isDirector(employee: Director | Teacher): employee is Director {
+  return 'numberOfReports' in employee;
 }
 
-// Create the Teacher class
-class Teacher implements TeacherInterface {
-  workFromHome(): string {
-    return "Cannot work from home";
-  }
-
-  getCoffeeBreak(): string {
-    return "Cannot have a break";
-  }
-
-  workTeacherTasks(): string {
-    return "Getting to work";
-  }
-}
-
-// Define the createEmployee function
-function createEmployee(salary: number | string): DirectorInterface | TeacherInterface {
-  if (typeof salary === 'number' && salary < 500) {
-    return new Teacher();
+function executeWork(employee: Director | Teacher): string {
+  if (isDirector(employee)) {
+    return employee.workDirectorTasks();
   } else {
-    return new Director();
+    return employee.workTeacherTasks();
   }
 }
 
-// Example usage
-const employee1 = createEmployee(200);
-console.log(employee1.workFromHome()); // Output: Cannot work from home
+// Example Usage
 
-const employee2 = createEmployee(1000);
-console.log((employee2 as DirectorInterface).workDirectorTasks()); // Output: Getting to director tasks
+const employee1: Teacher = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullTimeEmployee: true,
+  yearsOfExperience: 5,
+  location: 'New York',
+  workTeacherTasks: () => 'Getting to work'
+};
 
-const employee3 = createEmployee('$500');
-console.log((employee3 as TeacherInterface).getCoffeeBreak()); // Output: Cannot have a break
+const employee2: Director = {
+  firstName: 'Jane',
+  lastName: 'Smith',
+  fullTimeEmployee: false,
+  location: 'Los Angeles',
+  numberOfReports: 10,
+  workDirectorTasks: () => 'Getting to director tasks'
+};
+
+console.log(executeWork(employee1)); // Output: Getting to work
+console.log(executeWork(employee2)); // Output: Getting to director tasks
