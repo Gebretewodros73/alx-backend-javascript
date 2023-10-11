@@ -91,6 +91,12 @@ sudo node js/main.js
 - Directory: [task_2](./task_2)
 - Files: [main.ts](./task_2/js/main.ts), [webpack.config.js](./task_2/webpack.config.js), [tsconfig.json](./task_2/tsconfig.json), [package.json](task_2/package.json)
 
+```bash
+cd task_2
+sudo tsc js/main.ts
+sudo node js/main.js
+```
+
 ### Solution
 
 - Interfaces `DirectorInterface` and `TeacherInterface` with expected methods were created.
@@ -102,6 +108,12 @@ sudo node js/main.js
 - Directory: [task_2](./task_2)
 - File: [main.ts](./task_2/js/main.ts)
 
+```bash
+cd task_2
+sudo tsc js/main.ts
+sudo node js/main.js
+```
+
 ### Solution
 
 - A function `isDirector` was created that accepts an employee and checks if the employee is a director.
@@ -112,6 +124,12 @@ sudo node js/main.js
 - Directory: [task_2](./task_2)
 - File: [main.ts](./task_2/js/main.ts)
 
+```bash
+cd task_2
+sudo tsc js/main.ts
+sudo node js/main.js
+```
+
 ### Solution
 
 - A String literal type named `Subjects` was created allowing a variable to have the value "Math" or "History" only.
@@ -121,6 +139,11 @@ sudo node js/main.js
 
 - Directory: [task_3](./task_3)
 - Files: [main.ts](./task_3/js/main.ts), [interface.ts](./task_3/js/interface.js), [crud.d.ts](./task_3/js/crud.d.ts)
+
+```bash
+cd task_3
+sudo npm run start-dev
+```
 
 ### Solution
 
